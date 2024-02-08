@@ -1,0 +1,11 @@
+<p>first works!</p>
+<input type="text" [(ngModel)]="title">
+<h3>{{title}}</h3>
+<h1>{{text}}</h1>
+<h5>{{number}}</h5>
+<ul *ngIf="number.length > 0">
+    <!-- <li>{{ number }}</li> -->
+    <li *ngFor="let num of number">{{ num }}</li>
+</ul>
+
+<p *ngIf="number.length == 0"> no data</p>
